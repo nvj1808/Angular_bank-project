@@ -1,0 +1,15 @@
+<h2 class="ms-2 p-2 mt-5">{{data}}</h2>
+<div class="container w-50 rounded text-center p-5 mt-5" style="background-color: rgba(0, 0, 0, 0.622);">
+    <h1>Sign in your Account</h1>
+    <form action="">
+        <div class="p-3 mt-2">
+            <input (change)="acnoChange($event)" id="acid" name="acnum1" class="form-control" type="text" [placeholder]="inputplaceholder">
+        </div>
+        <div class="p-3 mt-2">
+            <input (change)="pswrdChange($event)" id="psw1" name="paswrd1" class="form-control" type="password" placeholder="Enter  the password">
+        </div>
+        <div class="p-3 mt-2">
+            <button class="btn btn-outline-light" type="button" (click)="login()">login</button>
+        </div>
+    </form>
+</div>
